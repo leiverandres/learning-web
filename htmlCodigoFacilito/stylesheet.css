@@ -1,0 +1,97 @@
+body {
+  background-color: #D2DFFF;
+  font-family: "Helvetica"
+}
+#contenido {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  color: #E08105;
+
+}
+nav ul li , a:visited{
+  display: inline-block;
+  margin-right: 20px;
+  color: #E08105;
+  cursor: pointer;
+}
+nav ul li a:visited{
+  color: #E58F0F;
+}
+
+nav ul li:hover {
+  background-color: #1D1D1D;
+  color: #E44E2D;
+  border-radius: 5px;
+  font-size: 1.1em;
+  padding: 5px;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+#textoPr {
+  width: 600px;
+  height: 300px;
+  background-color: #1D1D1D;
+  color: #FFF;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+a, a:visited {
+  color: #B2B9E3;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: #white;
+  font-weight: bold;
+}
+#myCanvas {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+meter {
+  background-color: #FFF;
+  padding: 2px;
+  border-radius: 5px;
+  color: #E08105;
+  width: 200px;
+  margin-left: 15px;
+}
+label {
+  display: block;
+
+}
+#btnSubmit {
+  border: none;
+  background-color: #FFF;
+  color: #E08105;
+  padding: 4px;
+  margin: 20px;
+  cursor: pointer;
+}
+#media {
+  box-sizing: border-box;
+}
+.partition {
+  display: inline-block;
+  width: 45%;
+}
+#media audio {
+  width: 200px;
+}
+#media video {
+
+}
