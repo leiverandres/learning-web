@@ -1,0 +1,11 @@
+{
+  "name": "chat_realtime",
+  "version": "1.0.0",
+  "description": "a realtime chat, part of the platzi course",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leiver Campeon <leiverandres@utp.edu.co>",
+  "license": "ISC"
+}
