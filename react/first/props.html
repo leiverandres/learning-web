@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://fb.me/react-0.14.6.js"></script>
+    <script src="https://fb.me/react-dom-0.14.6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <title>Testing props</title>
+  </head>
+  <body>
+    <h1>HIIIII</h1>
+    <div id="TitleText"></div>
+
+    <div class="container">
+      <div id="form"></div>
+    </div>
+
+    <script type="text/babel">
+      var mainText = React.createClass ({
+        render: function() {
+          return (<h1>Curso de { this.props.description }</h1>);
+        }
+      });
+
+      var compForm = React.createClass ({
+        render: function() {
+          return React.DOM.div({
+            className: "form-group",
+            children: [
+              React.DOM.label({
+                htmlFor: 'exampleInputEmail1',
+                children: this.props.tag,
+                name: "Lbl"+this.props.name
+              }),
+              React.DOM.input({
+                type: "text",
+                className: "form-control",
+                name: "txt"+this.props.name,
+                placeholder: this.props.tag
+              })
+            ]
+          });
+        }
+      })
+
+      ReactDOM.render(<mainText description="Testing React js props"/>, document.getElementById('TitleText'));
+    </script>
+  </body>
+</html>

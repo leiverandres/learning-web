@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello world with React JS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://fb.me/react-0.14.6.js"></script>
+    <script src="https://fb.me/react-dom-0.14.6.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <!-- // <script type="text/babel" src="./render.js" ></script> -->
+  </head>
+  <body>
+    <h1>Hi world with React js</h1>
+    <div id="react-test1"></div>
+    <div id="react-test2"></div>
+    <div id="react-test3"></div>
+    <div id="react-test4"></div>
+
+    <script type="text/babel">
+      var HelloMessage = React.createClass({
+        render: function() {
+          return (<h2> Hello {this.props.name} ! </h2>);
+        }
+      });
+
+      var Componente3 = React.createClass({
+        render: function(){
+          return React.DOM.div({children:[React.DOM.p({children:"Ejemplo 3"}),React.DOM.p({children:"El mismo ejemplo 3"})]})
+        }
+
+      });
+
+      var Componente4= React.createClass({
+        render:function(){
+          return React.DOM.div({
+              children:[React.DOM.h3({children: "Este es el ejemplo 4"})]
+
+          });
+        }
+      })
+      ReactDOM.render(<HelloMessage name="Leiver"/>, document.getElementById('react-test1'));
+      ReactDOM.render(<HelloMessage name="Other user"/>, document.getElementById('react-test2'));
+      ReactDOM.render(<Componente3/>, document.getElementById('react-test3'));
+      ReactDOM.render(<Componente4/>, document.getElementById('react-test4'));
+    </script>
+  </body>
+</html>

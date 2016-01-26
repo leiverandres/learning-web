@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Leiver Campeon <leiverandres@utp.edu.co>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "st": "^1.1.0"
+  }
 }
