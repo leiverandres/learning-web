@@ -1,0 +1,17 @@
+{
+  "name": "inline-editing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inline-edit-js": "^1.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^2.3.3"
+  }
+}
